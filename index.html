@@ -2,32 +2,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ToDo</title>
 </head>
 
 <link rel="stylesheet" href="index.css">
+
 <body>
+   
     
-    <div class="js-clock">
-        <h1></h1>
+    <div class="flex h-100">
+        <div class="side">
+            <h4 class="js-greetings greeting"></h4>
+
+            <form class="js-toDoForm toDoForm">
+             <input id="easy" type="radio" name="difficulty" value="easy"><label id="labelGreen"  for="easy" onClick="onClickLabel(event)">🟢</label>
+             <input id="normal" type="radio" name="difficulty" value="normal" checked><label  id="labelYello" for="normal" onClick="onClickLabel(event)" >🟡</label>
+             <input id="hard" type="radio" name="difficulty" value="hard"> <label id="labelRed" for="hard" onClick="onClickLabel(event)">🔴</label>
+                <input class="js-todoInput todoInput" type="text" placeholder="Write a todo">
+            </form>
+
+            <ul class="js-toDoList toDoList"></ul>
+        </div>
+
+        <div class="flex center">
+            <span class="js-clock clock"></span>
+
+            <form class="js-form form">
+                <input type="text" placeholder="What is your name?">
+            </form>
+            <span class="js-weather"></span>
+        </div>
+    
     </div>
-
-    <form class="js-form form">
-        <input type="text" placeholder="What is your name?">
-    </form>
-
-    <h4 class="js-greetings greeting"></h4>
-    <form class="js-toDoForm">
-        <input type="text" placeholder="Write a todo">
-    </form>
-    <ul class="js-toDoList">
-
-    </ul>
-
 
     <script src="clock.js"></script>
     <script src="gretting.js"></script>
     <script src="todo.js"></script>
-    
+    <!-- <script src="bg.js"></script> -->
+    <script src="mytest.js" ></script>
+    <script src="weather.js"></script>
 </body>
 </html>

@@ -1,18 +1,77 @@
-/* #title {
-   color: green
+body{
+    margin: 0px;
+
+}
+
+.flex{
+    display: flex;
+    
+}
+.center{
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    flex: 4
+}
+
+.h-100{
+    height: 100%;  
+}
+
+.side{
+    flex: 1;
+    background-color: whitesmoke;
+   
+
 }
 
 
-.clicked{
-    font-size: 100;
-} */
+.clock{
+    font-size: 100px;
+    color: white;
+}
 
 .form,
-.greeting
+.greeting,
+.hiding
 {
     display: none;
 }
 
+.greeting{
+    text-align: center
+}
 .showing{
     display: block;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.bgImage{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn .5s linear
+}
+
+.toDoList > li {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#easy, #normal , #hard {
+    display: none;
+}
+
+.todoInput{
+    
 }
