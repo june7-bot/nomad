@@ -8,33 +8,48 @@
 <link rel="stylesheet" href="index.css">
 
 <body>
-   
     
     <div class="flex h-100">
-        <div class="side">
-            <h4 class="js-greetings greeting"></h4>
 
-            <form class="js-toDoForm toDoForm">
-             <input id="easy" type="radio" name="difficulty" value="easy"><label id="labelGreen"  for="easy" onClick="onClickLabel(event)">🟢</label>
-             <input id="normal" type="radio" name="difficulty" value="normal" checked><label  id="labelYello" for="normal" onClick="onClickLabel(event)" >🟡</label>
-             <input id="hard" type="radio" name="difficulty" value="hard"> <label id="labelRed" for="hard" onClick="onClickLabel(event)">🔴</label>
+        <div class="side">
+
+            <div class="flex justifycenter alignitemcenter side-1">
+                <span class="js-clock clock"></span>  
+                <span class="js-icon"></span>
+            </div>
+
+                        
+          
+                <form class="js-form form">
+                        <input class="nameInput border" type="text" placeholder="What is your name?">
+                </form>
+            
+            <div class="flex name">
+                    <h4 class="js-greetings greeting"></h4>
+            </div>
+            
+      
+            <form class="js-toDoForm toDoForm flex">
+                <input class="padding" id="easy" type="radio" name="difficulty" value="easy"><label id="labelGreen"  for="easy" onClick="onClickLabel(event)">🟢&nbsp;</label>
+                <input class="padding" id="normal" type="radio" name="difficulty" value="normal" checked><label  id="labelYello" for="normal" onClick="onClickLabel(event)" >🟡&nbsp;</label>
+                <input class="padding" id="hard" type="radio" name="difficulty" value="hard"> <label id="labelRed" for="hard" onClick="onClickLabel(event)">🔴&nbsp;</label>
                 <input class="js-todoInput todoInput" type="text" placeholder="Write a todo">
             </form>
-
-            <ul class="js-toDoList toDoList"></ul>
-        </div>
-
-        <div class="flex center">
-            <span class="js-clock clock"></span>
-
-            <form class="js-form form">
-                <input type="text" placeholder="What is your name?">
-            </form>
-            <span class="js-weather"></span>
         </div>
     
+        <div class="flex center">
+               <div class="left">
+                    <h1>Do it!!!</h1>
+                    <ul class="js-toDoList toDoList">  </ul>
+                </div>
+          
+         <div class="right">
+            <h1>🥇🥇🥇</h1><ul class="js-finish finish"></ul>
+            </div>
+        </div>
     </div>
-
+    
+    <!-- <span class="js-weather"></span> -->
     <script src="clock.js"></script>
     <script src="gretting.js"></script>
     <script src="todo.js"></script>
