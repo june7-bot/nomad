@@ -115,12 +115,11 @@ let toDos = []
 
         const btn = event.target;
         const li = btn.parentNode;
- 
+        console.log(li);
         const fli = document.createElement('li');
         const trashBtn = document.createElement('button')
         trashBtn.className = "trashBtn"
         trashBtn.innerText="❌"
-
         todoList.removeChild(li)
 
         const span = document.createElement('span')
@@ -130,14 +129,16 @@ let toDos = []
         fli.appendChild(span)
         fli.appendChild(trashBtn)
         toDoFinish.appendChild(fli)
+        
 
         toDos.forEach(function(toDo){
             if( toDo.id === parseInt(li.id)){
                 toDo.finish = "finish"
             }
         })
-
         saveToDo()
+
+        trashBtn.addEventListener("click" , deleteFinish)
     }
 
     function deleteToDo(event){
@@ -156,7 +157,7 @@ let toDos = []
     function deleteFinish(event){
         const btn = event.target;
         const li = btn.parentNode;
-
+        
         toDoFinish.removeChild(li)
         
         toDos = toDos.filter(function(toDo){

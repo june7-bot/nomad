@@ -25,14 +25,14 @@ function paintIcon(icon){
     const image1 = new Image();
     image1.classList.add("iconImage")
 
-    if(icon === '01d'){ image1.src="http://openweathermap.org/img/wn/10d@2x.png"}
-    else if(icon === '02d'){ image1.src="http://openweathermap.org/img/wn/10d@2x.png"}
-    else if(icon === '03d'){ image1.src="http://openweathermap.org/img/wn/10d@2x.png"}
-    else if(icon === '04d'){ image1.src="http://openweathermap.org/img/wn/10d@2x.png"}
-    else if(icon === '09d'){ image1.src="http://openweathermap.org/img/wn/10d@2x.png"}
+    if(icon === '01d'){ image1.src="http://openweathermap.org/img/wn/01d@2x.png"}
+    else if(icon === '02d'){ image1.src="http://openweathermap.org/img/wn/02d@2x.png"}
+    else if(icon === '03d'){ image1.src="http://openweathermap.org/img/wn/03d@2x.png"}
+    else if(icon === '04d'){ image1.src="http://openweathermap.org/img/wn/04d@2x.png"}
+    else if(icon === '09d'){ image1.src="http://openweathermap.org/img/wn/09d@2x.png"}
     else if(icon === '10d'){ image1.src="http://openweathermap.org/img/wn/10d@2x.png"}
-    else if(icon === '11d'){ image1.src="http://openweathermap.org/img/wn/10d@2x.png"}
-    else if(icon === '13d'){ image1.src="http://openweathermap.org/img/wn/10d@2x.png"}
+    else if(icon === '11d'){ image1.src="http://openweathermap.org/img/wn/11d@2x.png"}
+    else if(icon === '13d'){ image1.src="http://openweathermap.org/img/wn/13d@2x.png"}
     else image1.src="http://openweathermap.org/img/wn/10d@2x.png"
 
     forIcon.appendChild(image1)
